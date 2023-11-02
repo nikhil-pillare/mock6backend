@@ -11,7 +11,6 @@ boardRouter.post('/', async(req,res)=>{
         res.status(400).json({ "mgs":error.messege });
       }
 })
-
 boardRouter.get("/",async(req,res)=>{
     try {
         const board = await BoardModel.find();
